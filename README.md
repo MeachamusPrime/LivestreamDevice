@@ -50,5 +50,5 @@ Ensure that xdotool and unclutter are installed
 1. Add
 1. Add a new page
 1. file:///home/pi/temp.html
+   * If you are not building for WestHSV CofC, modify the livestream link in temp.html to your livestream link.
 1. Add
-
