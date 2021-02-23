@@ -1,0 +1,41 @@
+Download the Pi installer from https://www.raspberrypi.org/software/
+Install Raspberry Pi (32-bit for 3B+, 64-bit for later versions) on a 4GB or larger SD Card
+Boot your Raspberry Pi 3B+ or later with the SD Card inserted
+
+Setup your WiFi or connect a wired ethernet cable
+
+Set Resolution to 1280x720 (or other resolution if that fails)
+(You may be able to get 1920x1080 to play smoothly on a Raspberry Pi 4 or later)
+Open the Pi menu in the top left of the desktop
+Preferences -> Rapberry Pi Configuration
+Display Tab -> Set Resolution...
+CEA mode 4 1280x720 60Hz 16:9
+OK -> OK
+
+Open the Pi menu in the top left of the desktop
+Preferences -> Appearance Settings
+Desktop Tab -> Picture
+/home/pi/Pictures/WestHuntsville.png
+Open
+Uncheck Wastebasket
+Uncheck Mounted Disks
+
+ensure that xdotool and unclutter are installed
+Click the ">_" icon next to the Pi menu in the top left of the desktop
+Type the following:
+sudo apt-get install xdotool unclutter
+y
+exit
+
+Go into Chromium settings
+Privacy settings
+Site Settings
+Set livestream.com to allow audio to autoplay
+On startup
+Open a specific page
+Add a new page
+https://westhuntsville.org
+Add
+Add a new page
+file:///home/pi/temp.html
+Add
