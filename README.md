@@ -2,12 +2,12 @@
 Raspberry Pi Kiosk for non-interactive Livestream viewing
 
 # Install Raspian OS
-Download the Pi installer from [https://www.raspberrypi.org/software/](https://www.raspberrypi.org/software/)
-Install Raspberry Pi (32-bit for 3B+, 64-bit for later versions) on a 4GB or larger SD Card
+1. Download the Pi installer from [https://www.raspberrypi.org/software/](https://www.raspberrypi.org/software/)
+1. Install Raspberry Pi (32-bit for 3B+, 64-bit for later versions) on a 4GB or larger SD Card
 
 # Boot Livestream Device
-Boot your Raspberry Pi 3B+ or later with the SD Card inserted
-Setup your WiFi or connect a wired ethernet cable
+1. Boot your Raspberry Pi 3B+ or later with the SD Card inserted
+1. Setup your WiFi or connect a wired ethernet cable
 
 # Set Resolution
 1. Set Resolution to 1280x720 (or other resolution if that fails)
