@@ -49,9 +49,10 @@ Ensure that xdotool and unclutter are installed
    * In the case of WestHSV CofC ==> https://westhuntsville.org
 1. Add
 1. Add a new page
-1. file:///home/pi/temp.html
+1. file:///home/pi/temp.html (or a direct link to your livestream)
 1. Add
 
 ## Modify for Your Livestream
-If you are not building for WestHSV CofC, modify the livestream link in temp.html to your livestream link.
+If you are not building for WestHSV CofC, modify the livestream link in `StartLivestream.sh` on the last line to your indirect livestream link.
+*  Alternatively, if you do not host an indirect link to your livestream, you can comment out the last line in `StartLivestream.sh` and uncomment the second to last line and change the link inside `temp.html` to your direct link.
 
