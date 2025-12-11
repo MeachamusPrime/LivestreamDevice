@@ -11,7 +11,7 @@ Raspberry Pi Kiosk for non-interactive Livestream viewing
 
 ## Set Resolution
 1. Set Resolution to 1280x720 (or other resolution if that fails)
-   * You may be able to get 1920x1080 to play smoothly on a Raspberry Pi 4 or later
+   * You may be able to get 1920x1080 to play smoothly on a Raspberry Pi 4 or later, but make sure to change the mousemove locations in CheckForRefresh.sh
 1. Open the Pi menu in the top left of the desktop
 1. Preferences -> Rapberry Pi Configuration
 1. Display Tab -> Set Resolution...
