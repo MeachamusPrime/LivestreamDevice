@@ -5,7 +5,7 @@ Boot your Raspberry Pi 3B+ or later with the SD Card inserted
 Setup your WiFi or connect a wired ethernet cable
 
 Set Resolution to 1280x720 (or other resolution if that fails)
-(You may be able to get 1920x1080 to play smoothly on a Raspberry Pi 4 or later)
+(You may be able to get 1920x1080 to play smoothly on a Raspberry Pi 4 or later, but make sure to change the mousemove locations in CheckForRefresh.sh)
 Open the Pi menu in the top left of the desktop
 Preferences -> Rapberry Pi Configuration
 Display Tab -> Set Resolution...
