@@ -19,13 +19,15 @@ while [[ 1=1 ]]; do
 
 	if [[ $WIRED_RESULT -lt 500000 ]]; then
 		if [[ $WIFI_RESULT -lt 500000 ]]; then
-			xdotool mousemove 384 216
+			# +30 from left border, -20 from bottom border (This is the common location for the play button)
+			xdotool mousemove 30 700
 			xdotool click 1
 			sleep 5
 		fi
 	elif [[ $WIFI_RESULT -lt 500000 ]]; then
 		if [[ $WIRED_RESULT -lt 500000 ]]; then
-			xdotool mousemove 384 216
+			# +30 from left border, -20 from bottom border (This is the common location for the play button)
+			xdotool mousemove 30 700
 			xdotool click 1
 			sleep 5
 		fi
