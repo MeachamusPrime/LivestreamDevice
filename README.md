@@ -8,25 +8,31 @@ Raspberry Pi Kiosk for non-interactive Livestream viewing
 ## Boot Livestream Device
 1. Boot your Raspberry Pi 3B+ or later with the SD Card inserted
 1. Setup your WiFi or connect a wired ethernet cable
+1. Click the ">_" icon next to the Pi menu in the top left of the desktop
+2. Run "sudo raspi-config"
+3. Choose "Advanced Options"
+4. Choose "Wayland"
+5. Choose "X11"
+6. Exit the program by pressing escape until it exits
 
 ## Set Resolution
 1. Set Resolution to 1280x720 (or other resolution if that fails)
    * You may be able to get 1920x1080 to play smoothly on a Raspberry Pi 4 or later, but make sure to change the mousemove locations in CheckForRefresh.sh
 1. Open the Pi menu in the top left of the desktop
-1. Preferences -> Rapberry Pi Configuration
-1. Display Tab -> Set Resolution...
-1. Choose "CEA mode 4 1280x720 60Hz 16:9"
-1. OK -> OK
+1. Preferences -> Control Center
+1. Screens -> Screens -> HDMI-1 -> Resolution -> 1280x720
+1. Apply -> Close
 
 ## Set Background Picture
 1. Open the Pi menu in the top left of the desktop
-1. Preferences -> Appearance Settings
-1. Desktop Tab -> Picture
+1. Preferences -> Control Center
+1. Desktop -> Picture
 1. Select your chosen background
    * In the case of WestHSV CofC ==> /home/pi/Pictures/WestHuntsville.png
 1. Open
 1. Uncheck Wastebasket
 1. Uncheck Mounted Disks
+1. Close
 
 ## Install Support Software
 Ensure that xdotool and unclutter are installed
@@ -41,15 +47,12 @@ Ensure that xdotool and unclutter are installed
 1. Privacy settings
 1. Site Settings
 1. Set your streaming site to allow audio to autoplay
-   * In the case of WestHSV CofC ==> livestream.com
+   * In the case of WestHSV CofC ==> vimeo.com
 1. On startup
 1. Open a specific page
 1. Add a new page
 1. Enter your website
    * In the case of WestHSV CofC ==> https://westhuntsville.org
-1. Add
-1. Add a new page
-1. file:///home/pi/temp.html (or a direct link to your livestream)
 1. Add
 
 ## Modify for Your Livestream
