@@ -3,26 +3,26 @@ Raspberry Pi Kiosk for non-interactive Livestream viewing
 
 ## Install Raspian OS
 1. Download the Pi installer from [https://www.raspberrypi.org/software/](https://www.raspberrypi.org/software/)
-1. Install Raspberry Pi (32-bit for 3B+, 64-bit for later versions) on a 4GB or larger SD Card
+2. Install Raspberry Pi (64-bit) on a 8GB or larger SD Card
 
 ## Boot Livestream Device
 1. Boot your Raspberry Pi 3B+ or later with the SD Card inserted
-1. Setup your WiFi or connect a wired ethernet cable
-1. Click the ">_" icon next to the Pi menu in the top left of the desktop
-2. Run "sudo raspi-config"
-3. Choose "Advanced Options"
-4. Choose "Wayland"
-5. Choose "X11"
-6. Exit the program by pressing escape until it exits
-7. Reboot
+2. Setup your WiFi or connect a wired ethernet cable
+3. Click the ">_" icon next to the Pi menu in the top left of the desktop
+4. Run "sudo raspi-config"
+5. Choose "Advanced Options"
+6. Choose "Wayland"
+7. Choose "X11"
+8. Exit the program by pressing escape until it exits
+9. Reboot
 
 ## Set Resolution
 1. Set Resolution to 1280x720 (or other resolution if that fails)
    * You may be able to get 1920x1080 to play smoothly on a Raspberry Pi 4 or later, but make sure to change the mousemove locations in CheckForRefresh.sh
-1. Open the Pi menu in the top left of the desktop
-1. Preferences -> Control Center
-1. Screens -> Screens -> HDMI-1 -> Resolution -> 1280x720
-1. Apply -> Close
+2. Open the Pi menu in the top left of the desktop
+3. Preferences -> Control Center
+4. Screens -> Screens -> HDMI-1 -> Resolution -> 1280x720
+5. Apply -> Close
 
 ## Set the Audio Device
 1. Right click the audio icon in the taskbar
@@ -30,30 +30,30 @@ Raspberry Pi Kiosk for non-interactive Livestream viewing
 
 ## Set Background Picture
 1. Open the Pi menu in the top left of the desktop
-1. Preferences -> Control Center
-1. Desktop -> Picture
-1. Select your chosen background
+2. Preferences -> Control Center
+3. Desktop -> Picture
+4. Select your chosen background
    * In the case of WestHSV CofC ==> /home/pi/Pictures/WestHuntsville.png
-1. Open
-1. Uncheck Wastebasket
-1. Uncheck Mounted Disks
-1. Close
+5. Open
+6. Uncheck Wastebasket
+7. Uncheck Mounted Disks
+8. Close
 
 ## Install Support Software
 Ensure that xdotool and unclutter are installed
 1. Click the ">_" icon next to the Pi menu in the top left of the desktop
-1. Type the following:
+2. Type the following:
    * sudo apt-get install xdotool unclutter
    * y
    * exit
 
 ## Set Firefox to Allow Video Streaming
 1. Navigate to the website where your embedded video is located as well as the video hosting site and perform the following
-1. Click the lock icon
-1. Click the connection security menu ![Step 1](FirefoxSettings1.png "Step 1")
-1. Click `More information` ![Step 2](FirefoxSettings2.png "Step 2")
-1. Select the `Permissions` tab
-1. Under `Autoplay`, uncheck `Use Default` and select `Allow Audio and Video` ![Step 3](FirefoxSettings3.png "Step 3")
+2. Click the lock icon
+3. Click the connection security menu ![Step 1](FirefoxSettings1.png "Step 1")
+4. Click `More information` ![Step 2](FirefoxSettings2.png "Step 2")
+5. Select the `Permissions` tab
+6. Under `Autoplay`, uncheck `Use Default` and select `Allow Audio and Video` ![Step 3](FirefoxSettings3.png "Step 3")
 
 ## Download this repository
 1. Download this repository
