@@ -1,9 +1,10 @@
 #!/bin/bash
 
 while [[ 1=1 ]]; do
-	CHROMIUM_RUNNING=`ps -ef | grep [c]hromium-browser`
+	#BROWSER_RUNNING=`ps -ef | grep [c]hromium`
+	BROWSER_RUNNING=`ps -ef | grep [f]irefox`
 
-	if [[ -z `echo -n $CHROMIUM_RUNNING` ]]; then
+	if [[ -z `echo -n $BROWSER_RUNNING` ]]; then
 		/home/pi/StartLivestream.sh
 		sleep 15
 	fi
@@ -20,15 +21,17 @@ while [[ 1=1 ]]; do
 	if [[ $WIRED_RESULT -lt 500000 ]]; then
 		if [[ $WIFI_RESULT -lt 500000 ]]; then
 			# +30 from left border, -20 from bottom border (This is the common location for the play button)
-			xdotool mousemove 30 700
-			xdotool click 1
+			#xdotool mousemove 30 700
+			#xdotool click 1
+			xdotool key F5
 			sleep 5
 		fi
 	elif [[ $WIFI_RESULT -lt 500000 ]]; then
 		if [[ $WIRED_RESULT -lt 500000 ]]; then
 			# +30 from left border, -20 from bottom border (This is the common location for the play button)
-			xdotool mousemove 30 700
-			xdotool click 1
+			#xdotool mousemove 30 700
+			#xdotool click 1
+			xdotool key F5
 			sleep 5
 		fi
 	else
