@@ -59,6 +59,7 @@ Ensure that xdotool and unclutter are installed
 1. Download this repository
 2. Open the archive
 3. Extract the files into the home directory
+4. Note: If you chose a username other than `pi`, you will need to change all occurences of the username `pi` in the scripts to your username
 
 ## Modify for Your Livestream
 If you are not building for WestHSV CofC, modify the livestream link in `StartLivestream.sh` on the last line to your indirect livestream link.
