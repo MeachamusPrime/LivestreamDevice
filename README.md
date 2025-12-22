@@ -14,6 +14,7 @@ Raspberry Pi Kiosk for non-interactive Livestream viewing
 4. Choose "Wayland"
 5. Choose "X11"
 6. Exit the program by pressing escape until it exits
+7. Reboot
 
 ## Set Resolution
 1. Set Resolution to 1280x720 (or other resolution if that fails)
@@ -22,6 +23,10 @@ Raspberry Pi Kiosk for non-interactive Livestream viewing
 1. Preferences -> Control Center
 1. Screens -> Screens -> HDMI-1 -> Resolution -> 1280x720
 1. Apply -> Close
+
+## Set the Audio Device
+1. Right click the audio icon in the taskbar
+2. Select the HDMI output
 
 ## Set Background Picture
 1. Open the Pi menu in the top left of the desktop
@@ -42,20 +47,26 @@ Ensure that xdotool and unclutter are installed
    * y
    * exit
 
-## Set Chromium to Allow Video Streaming
-1. Go into Chromium settings
-1. Privacy settings
-1. Site Settings
-1. Set your streaming site to allow audio to autoplay
-   * In the case of WestHSV CofC ==> vimeo.com
-1. On startup
-1. Open a specific page
-1. Add a new page
-1. Enter your website
-   * In the case of WestHSV CofC ==> https://westhuntsville.org
-1. Add
+## Set Firefox to Allow Video Streaming
+1. Navigate to the website where your embedded video is located as well as the video hosting site and perform the following
+1. Click the lock icon
+1. Click the connection security menu ![Step 1](FirefoxSettings1.png "Step 1")
+1. Click `More information` ![Step 2](FirefoxSettings2.png "Step 2")
+1. Select the `Permissions` tab
+1. Under `Autoplay`, uncheck `Use Default` and select `Allow Audio and Video` ![Step 3](FirefoxSettings3.png "Step 3")
+
+## Download this repository
+1. Download this repository
+2. Open the archive
+3. Extract the files into the home directory
 
 ## Modify for Your Livestream
 If you are not building for WestHSV CofC, modify the livestream link in `StartLivestream.sh` on the last line to your indirect livestream link.
-*  Alternatively, if you do not host an indirect link to your livestream, you can comment out the last line in `StartLivestream.sh` and uncomment the second to last line and change the link inside `temp.html` to your direct link.
+*  ~~Alternatively, if you do not host an indirect link to your livestream, you can comment out the last line in `StartLivestream.sh` and uncomment the second to last line and change the link inside `temp.html` to your direct link.~~ Due to migration to encrypted websites across the internet, temp.html no longer functions
 
+## Prep for distribution
+1. Reboot the device
+2. If everything loads correctly, shutdown the device
+3. Take the SD card to a computer and save a backup (Use Win32Imager on Windows or dd on Linux, or your favorite alternative)
+4. Replace the SD card in the device or write a new one and use it
+5. When installing the device on site, remember to bring a keyboard and mouse so you can enter the WiFi passphrase if needed
